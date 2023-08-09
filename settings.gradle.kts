@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "my_sample_module"
 include(":app")
-include(":mylibrary")
