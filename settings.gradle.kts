@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "my_sample_module"
 include(":app")
+include(":domain")
+include(":feature")
+include(":data")
+include(":datasource")
