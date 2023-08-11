@@ -4,6 +4,7 @@ import DogRepository
 import com.example.domain.GetRandomDogUseCase
 import com.example.domain.model.Dog
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject
 
 class GetRandomDogUseCaseImpl @Inject constructor(
@@ -11,6 +12,6 @@ class GetRandomDogUseCaseImpl @Inject constructor(
 )
     : GetRandomDogUseCase{
     override suspend fun invoke(): Flow<Dog> {
-        TODO("Not yet implemented")
+        return flowOf(dogRepository.getRandom())
     }
 }
