@@ -51,6 +51,7 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.44")
 
     implementation(project(":feature"))
+    implementation(project(":datasource"))
 }
 
 kapt {
